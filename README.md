@@ -1,5 +1,7 @@
 # Outfit Server
 
+**Under heavy development** *Releasing 2nd December*
+
 This repository has all the code needed to create and manage Outfit servers on
 DigitalOcean. An Outfit server runs instances of Shadowsocks proxies and
 provides an API used by the Outfit Manager application.
