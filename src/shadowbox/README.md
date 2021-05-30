@@ -1,22 +1,22 @@
-# Outline Server
+# Outfit Server
 
-The internal name for the Outline server is "Shadowbox". It is a server set up
+The internal name for the Outfit server is "Shadowbox". It is a server set up
 that runs a user management API and starts Shadowsocks instances on demand.
 
 It aims to make it as easy as possible to set up and share a Shadowsocks
-server. It's managed by the Outline Manager and used as proxy by the Outline
+server. It's managed by the Outfit Manager and used as proxy by the Outfit
 client apps. Shadowbox is also compatible with standard Shadowsocks clients.
 
 ## Self-hosted installation
 
 To install and run Shadowbox on your own server, run
 ```
-sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/AdityaCyberSafe/outfit-server/master/src/server_manager/install_scripts/install_server.sh)"
 ```
 
 You can specify flags to customize the installation. For example, to use hostname `myserver.com` and the port 443 for access keys, you can run:
 ```
-sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)" install_server.sh --hostname=myserver.com --keys-port=443
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/AdityaCyberSafe/outfit-server/master/src/server_manager/install_scripts/install_server.sh)" install_server.sh --hostname=myserver.com --keys-port=443
 ```
 
 Use `sudo --preserve-env` if you need to pass environment variables. Use `bash -x` if you need to debug the installation.
@@ -77,9 +77,9 @@ docker rmi $(docker images -f dangling=true -q)
 
 ## Access Keys Management API
 
-In order to utilize the Management API, you'll need to know the apiUrl for your Outline server.
-You can obtain this information from the "Settings" tab of the server page in the Outline Manager.
-Alternatively, you can check the 'access.txt' file under the '/opt/outline' directory of an Outline server. An example apiUrl is: https://1.2.3.4:1234/3pQ4jf6qSr5WVeMO0XOo4z.
+In order to utilize the Management API, you'll need to know the apiUrl for your Outfit server.
+You can obtain this information from the "Settings" tab of the server page in the Outfit Manager.
+Alternatively, you can check the 'access.txt' file under the '/opt/outline' directory of an Outfit server. An example apiUrl is: https://1.2.3.4:1234/3pQ4jf6qSr5WVeMO0XOo4z.
 
 See [Full API Documentation](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/shadowbox/server/api.yml).
 The OpenAPI specification can be found at [api.yml](./server/api.yml).
