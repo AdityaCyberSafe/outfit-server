@@ -16,18 +16,18 @@ The system comprises the following components:
   access key and a REST API to manage the access keys. The Outfit Server runs
   in a Docker container in the host machine.
 
-  See [`src/shadowbox`](src/shadowbox)
+  See [`src/shadowbox`](https://github.com/AdityaCyberSafe/outfit-server/tree/master/src/shadowbox)
 
 - **Outfit Manager:** an [Electron](https://electronjs.org/) application that
   can create Outfit Servers on the cloud and talks to their access key
   management API to manage who has access to the server.
 
-  See [`src/server_manager`](src/server_manager)
+  See [`src/server_manager`](https://github.com/AdityaCyberSafe/outfit-server/tree/master/src/server_manager)
 
 - **Metrics Server:** a REST service that the Outfit Server talks to
   if the user opts-in to anonymous metrics sharing.
 
-  See [`src/metrics_server`](src/metrics_server)
+  See [`src/metrics_server`](https://github.com/AdityaCyberSafe/outfit-server/tree/master/src/metrics_server)
 
 
 ## Code Prerequisites
